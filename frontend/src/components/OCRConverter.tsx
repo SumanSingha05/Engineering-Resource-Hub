@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Upload, FileText, Download, Camera, Wand2 } from 'lucide-react'
+import {  FileText, Download, Camera, Wand2 } from 'lucide-react'
 import { geminiService } from '../services/geminiService'
 import toast from 'react-hot-toast'
 

@@ -11,9 +11,7 @@ const testFirebase = async () => {
     console.log('Testing Firebase connectivity...')
     console.log('Firestore:', db)
     
-    // Test Firestore
-    const testCollection = collection(db, 'test')
-    console.log('Test collection created')
+   
     
     return true
   } catch (error) {

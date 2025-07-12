@@ -6,13 +6,9 @@ import {
   Plus, 
   Trash2, 
   Save, 
-  Wand2, 
-  BookOpen, 
-  Clock,
   FileText,
   Sparkles,
   Settings,
-  Target
 } from 'lucide-react'
 import toast from 'react-hot-toast'
 import { geminiService } from '../services/geminiService'

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { db } from '../config/firebase'
-import { collection, addDoc, getDocs, doc, updateDoc, Timestamp } from 'firebase/firestore'
+import { collection, addDoc, getDocs,  Timestamp } from 'firebase/firestore'
 import { 
   BookOpen, 
   Clock, 
@@ -9,7 +9,6 @@ import {
   XCircle, 
   Play, 
   FileText, 
-  Upload,
   Eye,
   Trophy
 } from 'lucide-react'
@@ -53,6 +52,7 @@ function TestPlatform() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [userAnswers, setUserAnswers] = useState<number[]>([])
   const [testStarted, setTestStarted] = useState(false)
+  // @ts-ignore
   const [testCompleted, setTestCompleted] = useState(false)
   const [timeLeft, setTimeLeft] = useState(0)
   const [testResults, setTestResults] = useState<TestResult[]>([])
